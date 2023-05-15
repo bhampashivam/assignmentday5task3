@@ -1,0 +1,23 @@
+<p>movie-table works!</p>
+<br/>
+<table border="5">
+    <th>Title</th>
+    <th>Genre</th>
+    <th>Director</th>
+    <tr *ngFor="let m of getMovies()">
+        <td>{{m.title}}</td>
+        <td>{{m.genre}}</td>
+        <td>{{m.director}}</td>
+    </tr>
+</table>
+
+<style>
+    th{
+      background-color: yellowgreen;  
+    }
+    table{
+        height: 260px;
+        width: 500px;
+        text-align: center;
+    }
+</style>
